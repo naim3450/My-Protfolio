@@ -2,51 +2,58 @@
 let arr = [
     {
         id: 1,
+        name: `Gourmet-Gril`,
+        type: `restaurants`,
+        image: "./Image/Gormet_Gril.jpg",
+        path: `https://gourmet-gril-team.vercel.app/`,
+        useInfo: ["React", "Context Api", "Talwind CSS", "GSAP"],
+        GitHub: "https://github.com/naim3450/Gourmet-Gril"
+    },
+    {
+        id: 2,
         name: `LAZAREV`,
         type: `Product Design Agency`,
         image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAgKBe-A6wbawubAVr3nLA9BB0MuX75smkSQ&s`,
         path: `https://naim3450.github.io/LAZAREV/`,
-        useInfo: ["HTML", "CSS", "Javascript", "GSAP"]
-    },
-    {
-        id: 2,
-        name: `Sundown-Studio`,
-        type: `Design & Production Studio`,
-        image: "public/Image/sundown.jpg",
-        path: `https://naim3450.github.io/Sundown/`,
-        useInfo: ["HTML", "CSS", "Javascript", "GSAP"]
+        useInfo: ["HTML", "CSS", "Javascript", "GSAP"],
+        GitHub: "https://github.com/naim3450/LAZAREV"
     },
     {
         id: 3,
-        name: `Gourmet-Gril`,
-        type: `restaurants`,
-        image: "public/Image/Gormet_Gril.jpg",
-        path: `https://gourmet-gril-team.vercel.app/`,
-        useInfo: ["React", "Context Api", "Talwind CSS", "GSAP"]
+        name: `Sundown-Studio`,
+        type: `Design & Production Studio`,
+        image: "./Image/sundown.jpg",
+        path: `https://naim3450.github.io/Sundown/`,
+        useInfo: ["HTML", "CSS", "Javascript", "GSAP"],
+        GitHub: "https://github.com/naim3450/Sundown"
     },
+
     {
         id: 4,
         name: `Tack Store`,
         type: `e-commerce`,
-        image: "public/Image/tackStore.png",
+        image: "./Image/tackStore.png",
         path: `https://tack-store.vercel.app/`,
-        useInfo: ["HTML", "CSS", "Vanilla JavaScript",]
+        useInfo: ["HTML", "CSS", "Vanilla JavaScript",],
+        GitHub: "https://github.com/naim3450/Tack_Store"
     },
     {
         id: 5,
         name: `Emprise`,
         type: `travel site`,
-        image: "public/Image/trav.jpg",
+        image: "./Image/trav.jpg",
         path: `https://project-emprise.vercel.app/`,
-        useInfo: ["React", "Context Api", "Talwind CSS"]
+        useInfo: ["React", "Context Api", "Talwind CSS"],
+        GitHub: "https://github.com/naim3450/Project-Emprise"
     },
     {
         id: 6,
         name: `Weather`,
         type: `Weather application`,
-        image: "public/Image/weather.png",
+        image: "./Image/weather.png",
         path: `https://naim3450.github.io/Weather_API/`,
-        useInfo: ["HTML", "CSS", "JavaScript", "Weather Api"]
+        useInfo: ["HTML", "CSS", "JavaScript", "Weather Api"],
+        GitHub: "https://github.com/naim3450/Weather_API"
     },
 
 ]

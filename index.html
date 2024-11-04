@@ -14,19 +14,20 @@
 </head>
 
 <body>
+
   <div class="main">
 
     <div id="home">
 
-      <nav>
+      <nav style=" border-bottom: 1px solid rgba(128, 128, 128, 0.473);">
         <h1 class="logo">NAIM.</h1>
 
         <div class="right">
-          <a href="">
+          <a href="contect.html">
             <h3>contact</h3>
           </a>
 
-          <a href="#" download="file.pdf">
+          <a href="./resume.pdf" download="resume.pdf">
             <h3>resume</h3>
           </a>
 
@@ -104,7 +105,7 @@
 
     </div>
 
-    <div class="h-[100vh] w-full relative flex items-center skill_Part">
+    <div class="skill_Part h-[100vh] w-full relative flex items-center">
 
       <div class="container mx-auto flex flex-col items-center justify-center">
         <h1 class="text-4xl font-bold mb-10 text-center">🌟 Skills</h1>
@@ -158,7 +159,7 @@
         </div>
 
         <button class="mt-12 bg-blue-500 text-white py-2 font-semibold px-4 rounded capitalize contectMe">
-          Contect Me
+          <a href="contect.html">Contect Me</a>
         </button>
 
       </div>
@@ -174,60 +175,59 @@
       <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8 allProjectlist">
       </div>
     </div>
-  </div>
 
-  <footer class="h-[20vw] bg-[#222222] flex flex-col items-center justify-center">
-    <div class="container mx-auto px-8 py-12 text-white flex flex-col justify-center">
+    <footer class="h-[20vw] bg-[#222222] flex flex-col items-center justify-center">
+      <div class="container mx-auto px-8 py-12 text-white flex flex-col justify-center">
 
-      <div class="flex justify-around">
-        <div class="flex flex-col">
-          <h3 class="text-2xl font-bold mb-4">Contact</h3>
-          <a href="email:naim.saim74@gmail.com" class="mb-2">Email: naim.saim74@gmail.com</a>
-          <a href="tel:01953570992" class="mb-2">Phone: +880 1953570992</a>
-          <p>Location: Dhaka, Bangladesh</p>
-        </div>
+        <div class="flex justify-around">
+          <div class="flex flex-col">
+            <h3 class="text-2xl font-bold mb-4">Contact</h3>
+            <a href="email:naim.saim74@gmail.com" class="mb-2">Email: naim.saim74@gmail.com</a>
+            <a href="tel:01953570992" class="mb-2">Phone: +880 1953570992</a>
+            <p>Location: Dhaka, Bangladesh</p>
+          </div>
 
-        <div>
-          <h3 class="text-2xl font-bold mb-4">Social Links</h3>
-          <div class="flex gap-3">
-            <a href="https://wa.me/01906024873" target="_blank" class="hover:text-blue-500 transition-colors">
-              <i class="ri-whatsapp-fill text-2xl"></i>
-            </a>
-            <a target="_blank" href="https://github.com/naim3450" class="hover:text-blue-500 transition-colors">
-              <i class="ri-github-fill text-2xl"></i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/naim-hasan-166b3130a/"
-              class="hover:text-blue-500 transition-colors">
-              <i class="ri-linkedin-box-fill text-2xl"></i>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/crown.bug/"
-              class="hover:text-blue-500 transition-colors">
-              <i class="ri-instagram-fill text-2xl"></i>
-            </a>
+          <div>
+            <h3 class="text-2xl font-bold mb-4">Social Links</h3>
+            <div class="flex gap-3">
+              <a href="https://wa.me/01906024873" target="_blank" class="hover:text-blue-500 transition-colors">
+                <i class="ri-whatsapp-fill text-2xl"></i>
+              </a>
+              <a target="_blank" href="https://github.com/naim3450" class="hover:text-blue-500 transition-colors">
+                <i class="ri-github-fill text-2xl"></i>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/naim-hasan-166b3130a/"
+                class="hover:text-blue-500 transition-colors">
+                <i class="ri-linkedin-box-fill text-2xl"></i>
+              </a>
+              <a target="_blank" href="https://www.instagram.com/crown.bug/"
+                class="hover:text-blue-500 transition-colors">
+                <i class="ri-instagram-fill text-2xl"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold mb-4">About Me</h3>
+            <p class="text-gray-300 max-w-xs">
+              I'm a passionate web developer focused on creating engaging user experiences through modern web
+              technologies
+              and clean code.
+            </p>
+            <div class="mt-4">
+              <a href="./resume.pdf" download="resume.pdf" class="text-blue-500 hover:text-blue-400 transition-colors">
+                Download Resume
+              </a>
+            </div>
           </div>
         </div>
 
-        <div>
-          <h3 class="text-2xl font-bold mb-4">About Me</h3>
-          <p class="text-gray-300 max-w-xs">
-            I'm a passionate web developer focused on creating engaging user experiences through modern web technologies
-            and clean code.
-          </p>
-          <div class="mt-4">
-            <a href="#" download="file.pdf" class="text-blue-500 hover:text-blue-400 transition-colors">
-              Download Resume
-            </a>
-          </div>
+        <div class="text-center mt-8 pt-8 border-t border-gray-700">
+          <p>&copy; 2024 Your Name. All rights reserved.</p>
         </div>
       </div>
-
-      <div class="text-center mt-8 pt-8 border-t border-gray-700">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
   </div>
-
 
   <!-- templet part start  -->
   <template id="firstTemPlet">
@@ -297,92 +297,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-<!-- Project Card 1 -->
-<!-- <div
-          class="bg-white w-[23vw] rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
-          <div class="relative">
-            <img src="project1.jpg" alt="Project 1" class="w-full h-64 object-cover" />
-            <div class="absolute top-4 right-4">
-              <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Web App</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-2">E-Commerce Platform</h3>
-            <p class="text-gray-600 mb-4">A full-featured online shopping platform with React and Node.js</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">React</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Node.js</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">MongoDB</span>
-            </div>
-            <div class="flex justify-between items-center">
-              <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">View Project</a>
-              <div class="flex gap-3">
-                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="ri-github-fill text-xl"></i></a>
-                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="ri-external-link-line text-xl"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-<!-- Project Card 2 -->
-<!-- <div
-          class="bg-white w-[23vw] rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
-          <div class="relative">
-            <img src="project2.jpg" alt="Project 2" class="w-full h-64 object-cover" />
-            <div class="absolute top-4 right-4">
-              <span class="bg-green-500 text-white px-4 py-1 rounded-full text-sm">UI/UX</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-2">Portfolio Website</h3>
-            <p class="text-gray-600 mb-4">Modern portfolio with smooth animations and responsive design</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">HTML5</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">GSAP</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Tailwind</span>
-            </div>
-            <div class="flex justify-between items-center">
-              <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">View Project</a>
-              <div class="flex gap-3">
-                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="ri-github-fill text-xl"></i></a>
-                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="ri-external-link-line text-xl"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-<!-- Project Card 3 -->
-<!-- <div
-          class="bg-white w-[23vw] rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
-          <div class="relative">
-            <img src="project3.jpg" alt="Project 3" class="w-full h-64 object-cover" />
-            <div class="absolute top-4 right-4">
-              <span class="bg-purple-500 text-white px-4 py-1 rounded-full text-sm">Mobile App</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-2">Task Manager</h3>
-            <p class="text-gray-600 mb-4">Productivity app with real-time updates and collaboration features</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">React Native</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Firebase</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Redux</span>
-            </div>
-            <div class="flex justify-between items-center">
-              <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">View Project</a>
-              <div class="flex gap-3">
-                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="ri-github-fill text-xl"></i></a>
-                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="ri-external-link-line text-xl"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
