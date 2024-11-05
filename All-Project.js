@@ -64,7 +64,6 @@ let arr = [
 
 ]
 
-
 // let arr = [1, 2, 3, 4, 5, 6]
 export const AllProject = () => {
 
@@ -87,7 +86,9 @@ export const AllProject = () => {
             info.innerHTML = `${elm} ${el.useInfo.at(-1) == elm ? "" : "/"}`
             clonetempelet.querySelector(".useInfoPart").appendChild(info)
         });
+
         clonetempelet.querySelector(".viewProject").href = el.path
+        clonetempelet.querySelector(".GitHub").href = el.GitHub
         document.querySelector('.allProjectlist').appendChild(clonetempelet)
     })
 }
