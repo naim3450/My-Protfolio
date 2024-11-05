@@ -1,10 +1,16 @@
+import Gormet_Gril from './Image/Gormet_Gril.jpg'
+import sundown from './Image/sundown.jpg'
+import tackStore from './Image/tackStore.png'
+import trav from './Image/trav.jpg'
+import weather from './Image/weather.png'
+
 
 let arr = [
     {
         id: 1,
         name: `Gourmet-Gril`,
         type: `restaurants`,
-        image: "./Image/Gormet_Gril.jpg",
+        image: Gormet_Gril,
         path: `https://gourmet-gril-team.vercel.app/`,
         useInfo: ["React", "Context Api", "Talwind CSS", "GSAP"],
         GitHub: "https://github.com/naim3450/Gourmet-Gril"
@@ -22,7 +28,7 @@ let arr = [
         id: 3,
         name: `Sundown-Studio`,
         type: `Design & Production Studio`,
-        image: "./Image/sundown.jpg",
+        image: sundown,
         path: `https://naim3450.github.io/Sundown/`,
         useInfo: ["HTML", "CSS", "Javascript", "GSAP"],
         GitHub: "https://github.com/naim3450/Sundown"
@@ -32,7 +38,7 @@ let arr = [
         id: 4,
         name: `Tack Store`,
         type: `e-commerce`,
-        image: "./Image/tackStore.png",
+        image: tackStore,
         path: `https://tack-store.vercel.app/`,
         useInfo: ["HTML", "CSS", "Vanilla JavaScript",],
         GitHub: "https://github.com/naim3450/Tack_Store"
@@ -41,7 +47,7 @@ let arr = [
         id: 5,
         name: `Emprise`,
         type: `travel site`,
-        image: "./Image/trav.jpg",
+        image: trav,
         path: `https://project-emprise.vercel.app/`,
         useInfo: ["React", "Context Api", "Talwind CSS"],
         GitHub: "https://github.com/naim3450/Project-Emprise"
@@ -50,7 +56,7 @@ let arr = [
         id: 6,
         name: `Weather`,
         type: `Weather application`,
-        image: "./Image/weather.png",
+        image: weather,
         path: `https://naim3450.github.io/Weather_API/`,
         useInfo: ["HTML", "CSS", "JavaScript", "Weather Api"],
         GitHub: "https://github.com/naim3450/Weather_API"
