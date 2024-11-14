@@ -2,9 +2,6 @@ import { AllProject } from './All-Project';
 import './style.css'
 import Lenis from 'lenis'
 
-
-
-
 const lenis = new Lenis();
 // Use requestAnimationFrame to continuously update the scroll
 function raf(time) {
@@ -187,6 +184,4 @@ function showProjects() {
 Sheryjs()
 showProjectsAnimaetion()
 showProjects()
-
-window.StopWhateverBelow()
 
