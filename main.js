@@ -1,4 +1,5 @@
 import { AllProject } from './All-Project';
+import { arr } from './api';
 import './style.css'
 import Lenis from 'lenis'
 
@@ -21,12 +22,12 @@ function Sheryjs() {
         duration: 0.8,
     });
 
-    Shery.imageMasker(".banner", {
-        mouseFollower: true,
-        debug: true,
-        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-        duration: 1,
-    });
+    // Shery.imageMasker(".banner", {
+    //     mouseFollower: true,
+    //     debug: true,
+    //     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    //     duration: 1,
+    // });
 
     Shery.makeMagnet(".right h3", ".menuIcon", {
         ease: "cubic-bezier(0.23, 1, 0.320, 1)",
@@ -104,48 +105,33 @@ function showProjectsAnimaetion() {
 // Project part end 
 
 
-let Deatails = [
-    {
-        id: 1,
-        name: `LAZAREV`,
-        type: `Product Design Agency`,
-        image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAgKBe-A6wbawubAVr3nLA9BB0MuX75smkSQ&s`,
-        path: `https://naim3450.github.io/LAZAREV/`
-    },
-    {
-        id: 2,
-        name: `Sundown-Studio`,
-        type: `Weather application`,
-        // image: sundown,
-        // path: `https://naim3450.github.io/Sundown/`
-    },
-    {
-        id: 3,
-        name: `Weather`,
-        type: `Weather application`,
-        // image: weather,
-        // path: `https://naim3450.github.io/Weather_API/`
-    },
-    {
-        id: 4,
-        name: `Tack Store`,
-        type: `e-commerce`,
-        // image: tackStore,
-        // path: `https://tack-store.vercel.app/`
-    },
-]
-
-
 function showProjects() {
 
-    let firstTemPlet = document.getElementById('firstTemPlet')
+    arr.filter((el) => {
+        if (el.feture == true) {
+            let create = document.createElement("div")
+            create.innerHTML = `
+            <div class='h-[7vw] items-center flex border border-gray-400 relative fCard'>
+                <div class="flex w-full items-center justify-between px-[2vw]">
+                    <h2 class='text-black text-[2.3vw] font-bold font-serif ProjectName'>${el.name}</h2>
+                    <h3 class='text-black text-[1vw] lowercase ProjectType'>${el.type}</h3>
+                </div>
 
-    Deatails.map((el, idx) => {
-        let clonettempelet = document.importNode(firstTemPlet.content, true)
-        clonettempelet.querySelector('.ProjectName').innerHTML = el.name
-        clonettempelet.querySelector('.ProjectType').innerHTML = el.type
+                <a>
+                    <div class="w-[20vw] h-[15vw] border-[0.4vw] scale-0 absolute top-[50%] translate-y-[-50%] hidden">
+                    <img src="" alt="" class='w-[100%] h-[100%]  absolute' />
+                    </div>
+                </a>
 
-        document.querySelector('.ProjectlistParent').appendChild(clonettempelet)
+                <div class="h-[280px] w-[300px] absolute border-2 scale-0 -top-1/2 duration-500 bg-transparent hoverCard1 z-[999]">
+                    <a href="${el.path}" target="_blank">
+                        <img src="${el.image}" alt="${el.image}" class="w-full h-[280px] object-cover">
+                    </a>
+                </div>
+            </div>`
+
+            document.querySelector('.ProjectlistParent').append(create)
+        }
     })
 
     var tl2 = gsap.timeline({
@@ -175,13 +161,45 @@ function showProjects() {
         opacity: 0,
     }, 'two')
 
-    AllProject()
+
+    let fCard = document.querySelectorAll(".fCard")
+    fCard.forEach((item, idx) => {
+        item.addEventListener("mouseover", ((e) => {
+            gsap.to(item.querySelector(".hoverCard1"), {
+                scale: 1
+            })
+        }))
+        item.addEventListener("mouseleave", ((e) => {
+            gsap.to(item.querySelector(".hoverCard1"), {
+                scale: 0
+            })
+        }))
+        item.addEventListener("mousemove", ((e) => {
+            gsap.to(item.querySelector(".hoverCard1"), {
+                x: e.screenX - 200,
+            })
+        }))
+
+        // item.forEach((itm, id) => {
+        //     item.addEventListener("mousemove", ((e) => {
+        //         if (idx == id) {
+
+        //         }
+
+        //     }))
+
+        // });
+
+    });
 
 }
 
 
 
-Sheryjs()
+
+
+// Sheryjs()
 showProjectsAnimaetion()
 showProjects()
+AllProject()
 
