@@ -8,10 +8,8 @@ import Lenis from 'lenis'
 function landingPage(params) {
     const hellos = [
         "Hello",       // English
-        "Hola",        // Spanish
         "Bonjour",     // French
         "Ciao",        // Italian
-        "Hallo",       // German
         "こんにちは",  // Japanese
         "안녕하세요"     // Korean
       ];
@@ -34,7 +32,7 @@ function landingPage(params) {
         }
       }
   
-      setTimeout(showNextHello, 500); // start after 1s
+      setTimeout(showNextHello, 300); // start after 1s
 }
 
 const lenis = new Lenis();
