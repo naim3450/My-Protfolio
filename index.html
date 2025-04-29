@@ -13,8 +13,42 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
+<style>
+  .landing_page {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #cce3f6, #fbd6e3);
+
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 3rem;
+    transition: opacity 1s ease, transform 1s ease;
+    overflow: hidden;
+  }
+
+  #hello-text {
+    animation: fadeIn 1s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hide-page {
+    transform: translateY(-100%);
+    pointer-events: none;
+  }
+</style>
+
 <body>
 
+  <div class="h-screen w-screen fixed top-0 left-0 bg-black z-[9999] landing_page">
+    <div id="hello-text" class="text-black text-center"></div>
+  </div>
   <div class="main">
 
     <div id="home">
@@ -28,7 +62,7 @@
             <h3>contact</h3>
           </a> -->
 
-          <a href="https://drive.google.com/file/d/1xNk9IdCimI94BXcxfsGk1Og3VU3UR-kp/view?usp=sharing" target="_blank"
+          <a href="/public/resume.pdf" target="_blank"
             download="resume.pdf">
             <h3>resume</h3>
           </a>
@@ -299,11 +333,11 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
 
-  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> -->
+  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 
   <script type="module" src="/main.js"></script>
 </body>

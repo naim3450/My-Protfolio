@@ -3,6 +3,40 @@ import { arr } from './api';
 import './style.css'
 import Lenis from 'lenis'
 
+
+
+function landingPage(params) {
+    const hellos = [
+        "Hello",       // English
+        "Hola",        // Spanish
+        "Bonjour",     // French
+        "Ciao",        // Italian
+        "Hallo",       // German
+        "こんにちは",  // Japanese
+        "안녕하세요"     // Korean
+      ];
+  
+      const helloEl = document.getElementById("hello-text");
+      let index = 0;
+  
+      function showNextHello() {
+        if (index < hellos.length) {
+          helloEl.textContent = hellos[index];
+          helloEl.style.animation = 'none';
+          void helloEl.offsetWidth; // trigger reflow for animation reset
+          helloEl.style.animation = 'fadeIn 1s ease';
+          index++;
+          setTimeout(showNextHello, 300); // show next after 1.2s
+        } else {
+          setTimeout(() => {
+            document.querySelector('.landing_page').classList.add("hide-page");
+          }, 100);
+        }
+      }
+  
+      setTimeout(showNextHello, 500); // start after 1s
+}
+
 const lenis = new Lenis();
 // Use requestAnimationFrame to continuously update the scroll
 function raf(time) {
@@ -194,11 +228,8 @@ function showProjects() {
 
 }
 
-
-
-
-
-// Sheryjs()
+landingPage()
+Sheryjs()
 showProjectsAnimaetion()
 showProjects()
 AllProject()
