@@ -2,37 +2,43 @@ import { AllProject } from './All-Project';
 import { arr } from './api';
 import './style.css'
 import Lenis from 'lenis'
+import v1 from './Video/1.mp4'
+import v2 from './Video/2.mp4'
+import v3 from './Video/3.mp4'
+import resume from './public/resume.pdf'
 
 
+function landingPage() {
+    const el = document.getElementById('downloadResume');
+    el.href = resume;
 
-function landingPage(params) {
     const hellos = [
         "Hello",       // English
         "Bonjour",     // French
         "Ciao",        // Italian
         "こんにちは",  // Japanese
         "안녕하세요"     // Korean
-      ];
-  
-      const helloEl = document.getElementById("hello-text");
-      let index = 0;
-  
-      function showNextHello() {
+    ];
+
+    const helloEl = document.getElementById("hello-text");
+    let index = 0;
+
+    function showNextHello() {
         if (index < hellos.length) {
-          helloEl.textContent = hellos[index];
-          helloEl.style.animation = 'none';
-          void helloEl.offsetWidth; // trigger reflow for animation reset
-          helloEl.style.animation = 'fadeIn 1s ease';
-          index++;
-          setTimeout(showNextHello, 300); // show next after 1.2s
+            helloEl.textContent = hellos[index];
+            helloEl.style.animation = 'none';
+            void helloEl.offsetWidth; // trigger reflow for animation reset
+            helloEl.style.animation = 'fadeIn 1s ease';
+            index++;
+            setTimeout(showNextHello, 300); // show next after 1.2s
         } else {
-          setTimeout(() => {
-            document.querySelector('.landing_page').classList.add("hide-page");
-          }, 100);
+            setTimeout(() => {
+                document.querySelector('.landing_page').classList.add("hide-page");
+            }, 100);
         }
-      }
-  
-      setTimeout(showNextHello, 300); // start after 1s
+    }
+
+    setTimeout(showNextHello, 300); // start after 1s
 }
 
 const lenis = new Lenis();
@@ -80,7 +86,7 @@ function Sheryjs() {
     makeMagnet("contectMe")
 
     Shery.hoverWithMediaCircle(".headding h1", {
-        videos: ["./Video/1.mp4", "./Video/2.mp4", "./Video/3.mp4",],
+        videos: [v1, v2, v3],
     });
 
     Shery.textAnimate(".headding h1", {
