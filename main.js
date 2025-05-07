@@ -10,7 +10,9 @@ import resume from './public/resume.pdf'
 
 function landingPage() {
     const el = document.getElementById('downloadResume');
+    const el2 = document.getElementById('downloadResume2');
     el.href = resume;
+    el2.href = resume;
 
     const hellos = [
         "Hello",       // English
